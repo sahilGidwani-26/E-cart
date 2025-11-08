@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* === Enhanced Vibe Commerce Theme === */
+.glassy {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.glow {
+  transition: 0.3s ease;
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.glow:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+  background: #f0f4ff;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(59,130,246,0.15);
+}
+
+.receipt-card {
+  animation: fadeUp 0.3s ease;
+  border: 2px solid #3b82f6;
+  background: linear-gradient(180deg, #fff, #f9fbff);
+}
+@keyframes fadeUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
